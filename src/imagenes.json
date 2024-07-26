@@ -1,0 +1,10 @@
+{
+    "imagen_fondo": "src/assets/images/menu_fondo.png",
+    "imagen_jugador": "src/assets/images/michi_gordo.png",
+    "imagen_pez": "src/assets/images/goldfish.png",
+    "flecha_img": "src/assets/images/flecha.png",
+    "perro_imagen": "src/assets/images/perro.png",
+    "corazon_imagen": "src/assets/images/corazon.png",
+    "gatito_pizza": "src/assets/images/gatito_pizza.png",
+    "tomasita_foto": "src/assets/images/tomasita.jpg"
+}

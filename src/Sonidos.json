@@ -1,0 +1,7 @@
+{
+    "musica": "src/assets/musica/musica.mp3",
+    "sonido_comer": "src/assets/sounds/ANIMALCAT_6003_39_1.mp3",
+    "sonido_flecha": "src/assets/sounds/arrow-impact-87260.mp3",
+    "sonido_perro": "src/assets/sounds/dog-bark-179915.mp3",
+    "sonido_perder": "src/assets/sounds/Pou_game_over_sound.mp3"
+}

@@ -40,7 +40,8 @@ def crear_archivo_json_imagenes():
         "perro_imagen": "src/assets/images/perro.png",
         "corazon_imagen": "src/assets/images/corazon.png",
         "gatito_pizza": "src/assets/images/gatito_pizza.png",
-        "tomasita_foto": "src/assets/images/tomasita.jpg"
+        "tomasita_foto": "src/assets/images/tomasita.jpg",
+        "dulce": "src/assets/images/dulce.jpg"
     }
     
     with open(get_path_actual('imagenes.json'),'w') as file:
@@ -69,11 +70,12 @@ def leer_imagenes():
     corazon_imagen = pygame.image.load(imagenes["corazon_imagen"])
     gatito_pizza = pygame.image.load(imagenes["gatito_pizza"])
     tomasita_foto = pygame.image.load(imagenes["tomasita_foto"])
+    dulce_foto = pygame.image.load(imagenes["dulce"])
 
 
-    return imagen_fondo, imagen_jugador, imagen_pez, flecha_img, perro_imagen, corazon_imagen, gatito_pizza, tomasita_foto
+    return imagen_fondo, imagen_jugador, imagen_pez, flecha_img, perro_imagen, corazon_imagen, gatito_pizza, tomasita_foto, dulce_foto
 
-imagen_fondo, imagen_jugador, imagen_pez, flecha_img, perro_imagen, corazon_imagen, gatito_pizza, tomasita_foto = leer_imagenes()
+imagen_fondo, imagen_jugador, imagen_pez, flecha_img, perro_imagen, corazon_imagen, gatito_pizza, tomasita_foto, dulce_foto = leer_imagenes()
 
 def cargar_archivo_sonidos():
     """

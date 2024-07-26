@@ -24,7 +24,7 @@ PINK = (255, 174, 201)
 
 #Variables de pantalla
 screen = pygame.display.set_mode(TAM_PANTALLA)
-pygame.display.set_caption("I'M HUNGRYYY >:(")
+pygame.display.set_caption("Dulce Tomasita")
 screen.fill(MAGENTA)
 clock = pygame.time.Clock()
 imagen_fondo_posicion = (0,0)
@@ -58,6 +58,7 @@ fuente = pygame.font.SysFont(None, 45, False, True)
 texto_score = fuente.render(f"gordura: {score}", True, RED)
 texto_mute = fuente.render("UNMUTE", True, RED)
 tiempo_ultima_flecha = pygame.time.get_ticks()
+texto_titulo = fuente.render("Dulce Tomasita", True, BLACK)
 
 #Variables de comida
 comidas = []
@@ -93,3 +94,4 @@ musica_sonando = True
 #imagenes adicionales
 gatito_pizza_amoldada = pygame.transform.scale(gatito_pizza, (150, 250))
 tomasita_foto_amoldada = pygame.transform.scale(tomasita_foto, (200, 250))
+dulce_foto_amoldada = pygame.transform.scale(dulce_foto, (250, 250))

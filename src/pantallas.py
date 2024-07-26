@@ -45,6 +45,8 @@ def dibujar_menu(imagen_fondo):
     texto_rect_salir = (boton_salir["rect"].x + ((boton_salir["rect"].width - texto_rect_salir.width) // 2), boton_salir["rect"].y + ((boton_salir["rect"].height - texto_rect_salir.height) // 2))
     screen.blit(texto_salir, texto_rect_salir)
 
+    screen.blit(gatito_pizza_amoldada, (50, 300))
+    screen.blit(texto_titulo, (300, 50))
     running = True
     while running:
         clock.tick(FPS)
@@ -64,6 +66,8 @@ def dibujar_menu(imagen_fondo):
                     if punto_en_rectangulo(evento.pos, boton_salir["rect"]):
                         pygame.quit()
                         sys.exit()
+            
+        
 
         pygame.display.flip()
 
@@ -104,8 +108,9 @@ def ranking_pantalla() -> tuple:
         screen.blit(texto_subtitulo, texto_subtitulo_rect)
         screen.blit(texto_parentesis, texto_parentensis_rect)
         screen.blit(texto_volver, texto_rect_volver)
-        screen.blit(gatito_pizza_amoldada, (500, 300))
+        screen.blit(dulce_foto_amoldada, (500, 250))
         screen.blit(tomasita_foto_amoldada, (50, 300))
+    
          
 
         pygame.display.flip()

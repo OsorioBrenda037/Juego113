@@ -6,5 +6,6 @@
     "perro_imagen": "src/assets/images/perro.png",
     "corazon_imagen": "src/assets/images/corazon.png",
     "gatito_pizza": "src/assets/images/gatito_pizza.png",
-    "tomasita_foto": "src/assets/images/tomasita.jpg"
+    "tomasita_foto": "src/assets/images/tomasita.jpg",
+    "dulce": "src/assets/images/dulce.jpg"
 }

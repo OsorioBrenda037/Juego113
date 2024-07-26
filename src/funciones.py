@@ -296,6 +296,15 @@ def resetear_partida():
 #_______________________________________________________
 
 def mostrar_puntajes(screen, fuente, ANCHO, ALTO):
+    """
+    Muestra los puntajes más altos en la pantalla.
+
+    Args:
+        screen (pygame.Surface): La superficie de la pantalla donde se dibujarán los puntajes.
+        fuente (pygame.font.Font): La fuente utilizada para renderizar el texto de los puntajes.
+        ANCHO (int): El ancho de la pantalla.
+        ALTO (int): La altura de la pantalla.
+    """
     puntajes = cargar_archivo_csv("top_rank.csv") 
     ordenar_por_criterio(puntajes, "puntaje")
     top_5 = puntajes[:5]

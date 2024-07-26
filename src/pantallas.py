@@ -67,14 +67,19 @@ def dibujar_menu(imagen_fondo):
                         pygame.quit()
                         sys.exit()
             
-        
-
         pygame.display.flip()
 
 
-
-
 def ranking_pantalla() -> tuple:
+    """
+    Muestra la pantalla de ranking del juego, permitiendo al usuario ver los puntajes más altos
+    y regresar al menú principal.
+
+    Returns:
+        tuple: 
+            - Si el usuario hace clic en el botón "Volver", retorna la llamada a `dibujar_menu(imagen_fondo)` y False.
+            - Si el usuario cierra la ventana del juego, retorna None y False.
+    """
     clock = pygame.time.Clock()
     running = True
 
@@ -162,6 +167,11 @@ def game_over_screen(score:int):
         clock.tick(60)
 
 def game_loop():
+    """
+    Controla el bucle principal del juego, gestionando eventos, actualizando el estado del juego
+    y dibujando elementos en la pantalla.
+
+    """
     global tiempo_ultima_flecha, VELOCIDAD_X, VELOCIDAD_Y, FUERZA_SALTO, GRAVEDAD, en_el_suelo, mover_derecha, mover_izquierda, saltar
     global vidas, score, jugador, jugador_ancho, jugador_alto, jugador_x, jugador_y, vidas, score, fuente, texto_score, texto_mute
     global flecha, perros, texto_mute, texto_score, comida, comidas, comida_ancho, comida_alto, cantidad_comida, flecha_ancho, flecha_alto, cantidad_flechas, flechas_izdr, INTERVALO_FLECHAS

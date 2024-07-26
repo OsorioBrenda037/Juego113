@@ -87,11 +87,8 @@ def crear_perro(imagen=None):
     Args:
         imagen (pygame.Surface, opcional): La imagen a utilizar para el perro. Si no se proporciona, se utilizará una imagen predeterminada.
 
-    Returns:
+    Retorna:
         dict: Un diccionario que contiene el objeto de perro con los atributos especificados.
-
-    Raises:
-        None
 
     """
     if imagen:

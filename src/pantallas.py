@@ -15,6 +15,7 @@ def dibujar_menu(imagen_fondo):
     Retorna:
         tuple: Una tupla que contiene la cadena "JUGAR!!!" y un booleano que indica si el juego sigue en ejecución.
     """
+    clock = pygame.time.Clock()
     bonton_AN = 200
     boton_AL = 50
 
@@ -49,7 +50,6 @@ def dibujar_menu(imagen_fondo):
     screen.blit(texto_titulo, (300, 50))
     running = True
     while running:
-        clock.tick(FPS)
         # ----> detectar los eventos
         for evento in pygame.event.get():
             if evento.type == pygame.QUIT:
@@ -68,6 +68,8 @@ def dibujar_menu(imagen_fondo):
                         sys.exit()
             
         pygame.display.flip()
+        clock.tick(60)
+
 
 
 def ranking_pantalla() -> tuple:

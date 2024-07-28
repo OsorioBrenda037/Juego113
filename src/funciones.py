@@ -25,21 +25,8 @@ def punto_en_rectangulo(punto, rect):
     return x >= rect.left and x <= rect.right and y >= rect.top and y <= rect.bottom
 
 def distancia_entre_puntos(punto_1:tuple, punto_2:tuple) -> int:
-    # """
-    # Calcula la distancia entre dos puntos en un espacio 2D.
-
-    # Args:
-    #     punto_1 (tuple): Las coordenadas del primer punto en el formato (x1, y1).
-    #     punto_2 (tuple): Las coordenadas del segundo punto en el formato (x2, y2).
-
-    # Returns:
-    #     int: La distancia entre los dos puntos.
-    # """
-    # base = punto_1[0] - punto_2[0]
-    # altura = punto_1[1] - punto_2[1]
-    # return (base * 2 + altura * 2) **0.5 
     """
-    Calcula la distancia entre dos puntos en un espacio 2D.
+    Calcula la distancia entre dos puntos.
 
     Args:
         punto_1 (tuple): Las coordenadas del primer punto en el formato (x1, y1).
